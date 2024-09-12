@@ -10,7 +10,10 @@ export default function HeroSection() {
     <>
       <div className="hero-container">
         <video width="100%" height="100%" autoPlay loop muted>
-          <source src="videos/video2.mp4" type="video/mp4" />
+          <source
+            src={`${process.env.PUBLIC_URL}/videos/video2.mp4`}
+            type="video/mp4"
+          />
         </video>
         <div className="home_naslov">
           <a className="neon-button" href="#cardsection">
